@@ -9,7 +9,7 @@
 namespace PhpEws\EWSType;
 
 /**
- * Definition of the TimeZoneDefinitionType type.
+ * Definition of the TimeZoneContextType type.
  */
 class TimeZoneContextType extends EWSType
 {
