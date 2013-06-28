@@ -94,9 +94,16 @@ class ExchangeWebServices
     /**
      * Exchange impersonation
      *
-     * @var EWSType_ExchangeImpersonationType
+     * @var ExchangeImpersonationType
      */
     protected $impersonation;
+
+    /**
+     * The default timezone for all requests
+     *
+     * @var TimeZoneContextType
+     */
+    protected $default_timezone;
 
     /**
      * Miscrosoft Exchange version that we are going to connect to
@@ -142,9 +149,22 @@ class ExchangeWebServices
     }
 
     /**
+     * Sets the default timezone
+     *
+     * @param TimeZoneContextType $timezone
+     * @return boolean
+     */
+    public function setDefaultTimeZone($timezone)
+    {
+        $this->default_timezone = $timezone;
+
+        return true;
+    }
+
+    /**
      * Sets the impersonation property
      *
-     * @param EWSType_ExchangeImpersonationType $impersonation
+     * @param ExchangeImpersonationType $impersonation
      */
     public function setImpersonation($impersonation)
     {

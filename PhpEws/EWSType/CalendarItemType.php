@@ -11,7 +11,7 @@ namespace PhpEws\EWSType;
 /**
  * Definition of the CalendarItemType type
  */
-class CalendarItemType extends EWSType_ItemType
+class CalendarItemType extends ItemType
 {
     /**
      * Identifies a calendar item.
